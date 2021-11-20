@@ -5,8 +5,8 @@ tstep = 1e-2;
 sum_neurons = cell(num_neurons); % zeros(sim_time/tstep, num_neurons);
 
 % Weight matrix variables
-mean = [-10 -5 -1 0 1 5 10];
-variance = [-10 -5 -1 0 1 5 10];
+mean = [-10 -5]; %-1 0 1 5 10];
+variance = [-10 -5]; % -1 0 1 5 10];
 
 for i = mean
     for j = variance
@@ -28,18 +28,7 @@ for i = mean
     end
 end
 
-% Plotting
-for i = 1:length(mean)
-    figure (i) % One window per mean
-    hold on
-    
-    % Overlay all variances on each other
-    for j = 1:length(variance)
-        plot(sum_neurons{i, j});
-    end
-    
-    hold off
-end
+
 
 % Test code for running the sim
 % W = [0 -0.2; -0.2 0];
