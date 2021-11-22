@@ -3,4 +3,7 @@ matplotlib
 pandas
 sklearn
 jupyterlab
+tqdm
+plotly
+seaborn
 
